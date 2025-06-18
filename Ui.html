@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+   <title>Calculator 1</title>
+   <link rel="stylesheet" href="colourAndStuff.css">
+</head>
+<body>
+   <video autoplay muted loop id="vid">
+      <source src="videoplayback.mp4" type="video/mp4">
+   </video>
+   <div id="overlay"></div>
+   <div id="calcMain">
+      <p>Calculator v1.0</p>
+      <div id="bodyOfCalc">
+         <div id="resultScreen">
+            <input type="text" id='output'>
+         </div>
+         <div class="calcButtons" id="container">
+            <input type="button" value='AC' onclick="clearScreen()" id="clear">
+            <input type="button" value='←' onclick="backSpace()" id="backspace">
+            <input type="button" value='%' onclick="appendToScreen('%')" class="buttons">
+            <input type="button" value='/' onclick="appendToScreen('/')" class="buttons">
+            <br>
+            <input type="button" value='7' onclick="appendToScreen('7')" class="numbers">
+            <input type="button" value='8' onclick="appendToScreen('8')" class="numbers">
+            <input type="button" value='9' onclick="appendToScreen('9')" class="numbers">
+            <input type="button" value='x' onclick="appendToScreen('*')" class="buttons">
+            <br>
+            <input type="button" value='4' onclick="appendToScreen('4')" class="numbers">
+            <input type="button" value='5' onclick="appendToScreen('5')" class="numbers">
+            <input type="button" value='6' onclick="appendToScreen('6')" class="numbers">
+            <input type="button" value='-' onclick="appendToScreen('-')" class="buttons">
+            <br>
+            <input type="button" value='1' onclick="appendToScreen('1')" class="numbers">
+            <input type="button" value='2' onclick="appendToScreen('2')" class="numbers">
+            <input type="button" value='3' onclick="appendToScreen('3')" class="numbers">
+            <input type="button" value='+' onclick="appendToScreen('+')" class="buttons">
+            <br>
+            <input type="button" value='00' onclick="appendToScreen('00')" class="numbers">
+            <input type="button" value='0' onclick="appendToScreen('0')" class="numbers">
+            <input type="button" value='.' onclick="appendToScreen('.')" class="numbers">
+            <input type="button" value='=' onclick="outResult()" id="res">
+         </div>
+      </div>
+   </div>
+   <script src='scriptCode.js'></script>
+</body>
+</html>
