@@ -1,2 +1,2 @@
 # Frontend-Project
-A Simple Template Website Built Using Basic HTML, CSS and JS
+A Simple Calculator Webpage Built Using Basic HTML, CSS and JS
